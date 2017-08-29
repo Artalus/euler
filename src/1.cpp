@@ -23,11 +23,19 @@ vector<unsigned> get_multiples_less(unsigned limit) {
 	return result;
 }
 
-REGISTER_EULER(1, "Multiples of 3 and 5")
-
-	for (auto v : get_multiples_less(10)) {
+template<class Container>
+void print_sequence(Container &&cont) {
+	for (auto &&v : cont) {
 		cout << v << ' ';
 	}
 	cout << '\n';
+}
+
+REGISTER_EULER(1, "Multiples of 3 and 5")
+
+	unsigned n;
+	cout << "input n\n > ";
+	cin >> n;
+	print_sequence(get_multiples_less(n));
 
 REGISTER_EULER_END

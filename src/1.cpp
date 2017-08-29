@@ -23,9 +23,8 @@ vector<unsigned> get_multiples_less(unsigned limit) {
 	return result;
 }
 
-REGISTER_EULER(1)
+REGISTER_EULER(1, "Multiples of 3 and 5")
 
-	cout << "starting problem #1: list of natural multiples of 3 or 5\n";
 	for (auto v : get_multiples_less(10)) {
 		cout << v << ' ';
 	}

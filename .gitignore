@@ -66,4 +66,4 @@ CTestTestfile.cmake
 
 
 ## Euler project
-bin/Euler
+bin/Euler*

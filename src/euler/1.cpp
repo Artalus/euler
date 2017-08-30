@@ -1,4 +1,6 @@
-#include "euler.h"
+#include <euler/euler.h>
+#include <euler/common.h>
+
 #include <iostream>
 #include <vector>
 
@@ -21,14 +23,6 @@ vector<unsigned> get_multiples_less(unsigned limit) {
 	}
 
 	return result;
-}
-
-template<class Container>
-void print_sequence(Container &&cont) {
-	for (auto &&v : cont) {
-		cout << v << ' ';
-	}
-	cout << '\n';
 }
 
 REGISTER_EULER(1, "Multiples of 3 and 5")
